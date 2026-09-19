@@ -49,7 +49,12 @@ Refer to technology-specific instruction files:
 - Create reusable components for common UI patterns
 - Keep components focused on a single responsibility
 - Use props for configuration, not duplication
-- Document component APIs with TypeScript types
+- Document component APIs with a `Props` interface in the component frontmatter, including the purpose of each public prop.
+
+### Comments and Documentation
+
+- Explain intent, accessibility decisions, and non-obvious trade-offs; avoid comments that restate HTML, CSS classes, or expressions.
+- Keep documentation beside the API it describes and update it whenever the component contract changes.
 
 ## Development Workflow
 

@@ -27,6 +27,9 @@ export default [
         "error",
         { argsIgnorePattern: "^_", varsIgnorePattern: "^_" },
       ],
+      // Keep source formatting consistent without requiring a separate formatter.
+      "object-curly-spacing": ["error", "always"],
+      "array-bracket-spacing": ["error", "never"],
     },
   },
 
