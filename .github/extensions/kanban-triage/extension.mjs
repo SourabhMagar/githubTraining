@@ -4,15 +4,6 @@ import { joinSession, createCanvas } from "@github/copilot-sdk/extension";
 const servers = new Map();
 const defaultRepository = "SourabhMagar/githubTraining";
 
-function escapeHtml(value) {
-    return String(value)
-        .replaceAll("&", "&amp;")
-        .replaceAll("<", "&lt;")
-        .replaceAll(">", "&gt;")
-        .replaceAll('"', "&quot;")
-        .replaceAll("'", "&#039;");
-}
-
 async function getRepository() {
     return process.env.GITHUB_REPOSITORY || defaultRepository;
 }
